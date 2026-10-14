@@ -1,0 +1,48 @@
+#wxt-root {
+  display: flex;
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  border: 1px solid gray;
+  border-radius: 16px;
+  width: 32px;
+  height: 32px;
+  overflow: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  #wxt-root {
+    background: #1a1a1a;
+    color: #f0f0f0;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  #wxt-root {
+    background: #ffffff;
+    color: #333333;
+  }
+}
+
+#wxt-root:hover {
+  border-radius: initial;
+  padding: 16px;
+  width: initial;
+  height: initial;
+}
+
+#wxt-root a {
+  cursor: pointer;
+}
+
+#wxt-root ol {
+  margin: 0;
+  padding-left: 16px;
+}
+
+#wxt-root > div {
+  max-height: 75vh;
+}
